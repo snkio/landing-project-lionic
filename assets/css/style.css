@@ -276,6 +276,7 @@ h2 {
   padding: 2.5rem;
   max-width: 23.125rem;
   max-height: 22.5rem;
+  width: 100%;
   transform: scale(1);
   transition: transform 0.3s ease-out;
 }
@@ -299,6 +300,8 @@ h2 {
 .clients__avatar {
   border-radius: 50%;
   border: 2px solid #3172b9;
+  width: 100%;
+  max-width: 4.1875rem;
   margin-right: 1.25rem;
 }
 
@@ -319,6 +322,7 @@ h2 {
 
 .contacts__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -476,4 +480,39 @@ h2 {
 .footer__elems {
   list-style: none;
   margin-left: calc(3.5rem - 1.875rem);
+}
+
+@media (max-width: 1024px) {
+  .hero__wrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services__elem:hover {
+    scale: 1;
+  }
+
+  .clients__elem:hover {
+    transform: scale(1);
+  }
+
+  .clients__container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .joinus__container {
+    padding: 1.25rem;
+  }
+
+  .joinus__inputs {
+    gap: 0;
+  }
+
+  .joinus__comment {
+    max-width: 15.625rem;
+    width: 100%;
+  }
 }
