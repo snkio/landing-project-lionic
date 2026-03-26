@@ -6,12 +6,18 @@
     <title>Lionic</title>
     <link rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/index.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <img src="assets/img/logo.png" alt="logo" class="header__logo" />
-        <ul class="header__list">
+        <div class="header__burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="header__list" id="headertoggle">
           <li class="header__elem">
             <a href="#home" class="header__link">Home</a>
           </li>
@@ -30,10 +36,8 @@
           <li class="header__elem">
             <a href="#joinus" class="header__link">Join&nbsp;us</a>
           </li>
-          <li class="header__elem">
-            <button class="btn header__btn">Free Trial</button>
-          </li>
         </ul>
+        <button class="btn header__btn">Free Trial</button>
       </div>
     </header>
     <main class="main">
@@ -63,39 +67,40 @@
             Lionic guides you on&nbsp;making decisions for all aspects
             of&nbsp;your end-of-life plans.
           </p>
-        </div>
-        <div class="services__list">
-          <div class="services__elem">
-            <img src="assets/img/what-1.svg" alt="legacy" />
-            <h3 class="service__subtitle">Your Legacy</h3>
-            <p class="services__descp">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy
-            </p>
-          </div>
-          <div class="services__elem">
-            <img src="assets/img/what-2.svg" alt="health" />
-            <h3 class="service__subtitle">Your Health</h3>
-            <p class="services__descp">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy
-            </p>
-          </div>
-          <div class="services__elem">
-            <img src="assets/img/what-3.svg" alt="Funeral" />
-            <h3 class="service__subtitle">Funeral &amp;&nbsp;Memorial</h3>
-            <p class="services__descp">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy
-            </p>
-          </div>
-          <div class="services__elem">
-            <img src="assets/img/what-4.svg" alt="legacy" />
-            <h3 class="service__subtitle">Your Legacy</h3>
-            <p class="services__descp">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy
-            </p>
+
+          <div class="services__list">
+            <div class="services__elem">
+              <img src="assets/img/what-1.svg" alt="legacy" />
+              <h3 class="service__subtitle">Your Legacy</h3>
+              <p class="services__descp">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy
+              </p>
+            </div>
+            <div class="services__elem">
+              <img src="assets/img/what-2.svg" alt="health" />
+              <h3 class="service__subtitle">Your Health</h3>
+              <p class="services__descp">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy
+              </p>
+            </div>
+            <div class="services__elem">
+              <img src="assets/img/what-3.svg" alt="Funeral" />
+              <h3 class="service__subtitle">Funeral &amp;&nbsp;Memorial</h3>
+              <p class="services__descp">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy
+              </p>
+            </div>
+            <div class="services__elem">
+              <img src="assets/img/what-4.svg" alt="legacy" />
+              <h3 class="service__subtitle">Your Legacy</h3>
+              <p class="services__descp">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -307,7 +312,11 @@
             ></textarea>
             <div class="joinus__btns">
               <div class="joinus__wrapper">
-                <input type="submit" value="GET STARTED" class="joinus__btn" />
+                <input
+                  type="submit"
+                  value="GET STARTED"
+                  class="btn joinus__btn"
+                />
                 <label class="joinus__btns-flex">
                   <input type="checkbox" required />
                   I agree with the <span>user agreement</span>
