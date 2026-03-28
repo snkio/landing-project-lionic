@@ -663,4 +663,17 @@ h2 {
   .contacts__elem {
     margin-bottom: 1.875rem;
   }
+
+  .articles__elem {
+    overflow: hidden;
+  }
+
+  .articles__img {
+    max-width: 5.3125rem;
+    object-fit: cover;
+  }
+
+  .articles__info {
+    padding: 30px 15px;
+  }
 }
